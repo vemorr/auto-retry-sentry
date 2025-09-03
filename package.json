@@ -1,0 +1,54 @@
+{
+    "name": "@vemorr/auto-retry-sentry",
+    "description": "grammY API transformer function to retry requests (With Sentry integration)",
+    "version": "2.0.2",
+    "author": "vemorr",
+    "license": "MIT",
+    "engines": {
+        "node": ">=12.20.0 || >=14.13.1"
+    },
+    "homepage": "https://github.com/vemorr/auto-retry-sentry",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vemorr/auto-retry-sentry.git"
+    },
+    "bugs": {
+        "url": "https://github.com/vemorr/auto-retry-sentry/issues"
+    },
+    "scripts": {
+        "build": "deno2node",
+        "prepare": "npm run build"
+    },
+    "dependencies": {
+        "@sentry/node": "^10.9.0",
+        "debug": "^4.3.4"
+    },
+    "peerDependencies": {
+        "grammy": "^1.10.0"
+    },
+    "devDependencies": {
+        "@types/debug": "^4.1.7",
+        "@types/node": "^12.20.55",
+        "abort-controller": "^3.0.0",
+        "deno2node": "^1.11.0"
+    },
+    "files": [
+        "out/"
+    ],
+    "main": "out/mod.js",
+    "type": "commonjs",
+    "exports": {
+        ".": "./out/mod.js"
+    },
+    "keywords": [
+        "retry",
+        "bot",
+        "transformer",
+        "grammy",
+        "rate",
+        "flood",
+        "limit",
+        "broadcast",
+        "sentry"
+    ]
+}
